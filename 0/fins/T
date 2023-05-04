@@ -20,18 +20,18 @@ internalField   uniform 296.9;
 
 boundaryField
 {
+    #includeEtc "caseDicts/setConstraintTypes"
 
     base_fins
     {
         type            zeroGradient;
     }
-    
+
     fins_to_fluid
     {
         type            compressible::turbulentTemperatureCoupledBaffleMixed;
         value           $internalField;
         Tnbr            T;
-        kappaMethod		solidThermo;
     }
     
     fins_to_heater
@@ -39,7 +39,6 @@ boundaryField
         type            compressible::turbulentTemperatureCoupledBaffleMixed;
         value           $internalField;
         Tnbr            T;
-        kappaMethod 	solidThermo;
     }
 }
 

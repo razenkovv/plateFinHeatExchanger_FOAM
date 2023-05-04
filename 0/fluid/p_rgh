@@ -20,11 +20,14 @@ internalField   uniform 0;
 
 boundaryField
 {
+    #includeEtc "caseDicts/setConstraintTypes"
+
     ".*"
     {
         type            fixedFluxPressure;
         value           $internalField;
     }
+
     outlet_fluid
     {
         type            fixedValue;

@@ -20,16 +20,12 @@ internalField   uniform 296.9;
 
 boundaryField
 {
+    #includeEtc "caseDicts/setConstraintTypes"
 
     inlet_fluid
     {
         type            fixedValue;
         value           $internalField;
-    }
-    
-    walls_fluid
-    {
-    	type		zeroGradient;
     }
     
     outlet_fluid
@@ -38,13 +34,18 @@ boundaryField
         value           $internalField;
         inletValue      $internalField;
     }
+    
     fluid_to_fins
     {
         type            compressible::turbulentTemperatureCoupledBaffleMixed;
         value           $internalField;
         Tnbr            T;
-        kappaMethod 	fluidThermo;
     }
+
+    walls_fluid
+    {
+        type            zeroGradient;
+    }    
 }
 
 // ************************************************************************* //

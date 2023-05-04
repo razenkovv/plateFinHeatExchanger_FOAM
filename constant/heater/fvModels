@@ -21,26 +21,6 @@ energySource
     selectionMode   all;
 
     q               2.94e7;
-    //Q				56.64;
 }
 
-/*
-energySource
-    {
-        type            semiImplicitSource;
-        
-        selectionMode   all;
-        
-        volumeMode		specific;
-    	
-    	sources
-    	{
-    	    e
-    	    {
-    	        explicit 2.94e7;
-    	        implicit 0;
-    	    }
-    	}
-    }
-*/
 // ************************************************************************* //

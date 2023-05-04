@@ -27,25 +27,27 @@ thermoType
 
 mixture
 {
-    //Air
+    // Air
 
     specie
     {
-    	nMoles 			1;
-        molWeight       28.9; //[g/mol]
+        molWeight       28.9;
     }
+    
     equationOfState
     {
         rho             1.196;
     }
+    
     thermodynamics
     {
-        Cp              1005; //[J/kg/K]
+        Cp              1005;
         Hf              0;
     }
+    
     transport
     {
-        mu              1.8e-05; //[kg/m/s]
+        mu              1.8e-5;
         Pr              0.7;
     }
 }

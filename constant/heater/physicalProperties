@@ -27,7 +27,7 @@ thermoType
 
 mixture
 {
-    // heater
+    // Heater
 
     specie
     {
@@ -35,7 +35,8 @@ mixture
     }
     equationOfState
     {
-        rho             1.28;
+        //rho             8000;
+        rho               1.28;
     }
     transport
     {

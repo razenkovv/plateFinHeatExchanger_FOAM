@@ -17,7 +17,7 @@ FoamFile
 regions
 (
     fluid       (fluid)
-    solid       (heater fins)
+    solid       (fins heater)
 );
 
 // ************************************************************************* //

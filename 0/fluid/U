@@ -20,17 +20,12 @@ internalField   uniform (0 0 5.6);
 
 boundaryField
 {
+    #includeEtc "caseDicts/setConstraintTypes"
 
     inlet_fluid
     {
         type            fixedValue;
         value           uniform (0 0 5.6);
-    }
-    
-    walls_fluid
-    {
-    	type		fixedValue;
-    	value 		uniform (0 0 0);
     }
     
     outlet_fluid
@@ -42,6 +37,12 @@ boundaryField
     fluid_to_fins
     {
         type            noSlip;
+    }
+
+    walls_fluid
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
 }
 
