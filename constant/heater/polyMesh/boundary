@@ -19,15 +19,15 @@ FoamFile
     walls_heater
     {
         type            patch;
-        nFaces          256;
-        startFace       2370;
+        nFaces          320;
+        startFace       2003;
     }
     heater_to_fins
     {
         type            mappedWall;
         inGroups        List<word> 1(wall);
-        nFaces          52;
-        startFace       2626;
+        nFaces          90;
+        startFace       2323;
         sampleMode      nearestPatchFace;
         sampleRegion    fins;
         samplePatch     fins_to_heater;

@@ -17,10 +17,7 @@ FoamFile
     limitT
     {
 		type            limitTemperature;
-        selectionMode          all;
-        //field           T;   // Optional energy/temperature field name
-                                // Set to T for compressibleVoF
-        //phase           gas; // Optional phase name
+        selectionMode   all;
         min             270;
         max             350;
     }

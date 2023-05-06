@@ -19,27 +19,27 @@ FoamFile
     inlet_fluid
     {
         type            patch;
-        nFaces          58;
-        startFace       234488;
+        nFaces          56;
+        startFace       271634;
     }
     outlet_fluid
     {
         type            patch;
-        nFaces          58;
-        startFace       234546;
+        nFaces          56;
+        startFace       271690;
     }
     walls_fluid
     {
         type            patch;
-        nFaces          1948;
-        startFace       234604;
+        nFaces          1596;
+        startFace       271746;
     }
     fluid_to_fins
     {
         type            mappedWall;
         inGroups        List<word> 1(wall);
-        nFaces          40068;
-        startFace       236552;
+        nFaces          42568;
+        startFace       273342;
         sampleMode      nearestPatchFace;
         sampleRegion    fins;
         samplePatch     fins_to_fluid;

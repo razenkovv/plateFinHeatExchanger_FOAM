@@ -36,7 +36,7 @@ mixture
     equationOfState
     {
         //rho             8000;
-        rho               1.28;
+        rho               1280;
     }
     transport
     {
